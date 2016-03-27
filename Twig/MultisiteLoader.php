@@ -7,10 +7,10 @@ use Alex\MultisiteBundle\Branding\SiteContext;
 /**
  * Wraps a Twig Loader and extends template syntax
  */
-class MultisiteLoader extends \Twig_Loader_Filesystem
+class MultisiteLoader implements \Twig_LoaderInterface
 {
     /**
-     * @var Twig_Loader_Filesystem
+     * @var Twig_LoaderInterface
      */
     private $loader;
 
